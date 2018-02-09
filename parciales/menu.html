@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-light  fixed-top" style="background-color: #ffffff;
+box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.3);">
+		<div class="container">
+				  <a class="navbar-brand" href="#/">
+				  <img src="img/icons/perfil.png" width="30" height="30" class="d-inline-block align-top" alt=""> AppComidas
+				  </a>
+				  <button class="navbar-toggler" type="button" ng-init="isCollapsed = true" ng-click="isCollapsed = !isCollapsed"
+				   aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="navbar-collapse" ng-class="{collapse: isCollapsed}" id="navbarNav">
+				    <ul class="navbar-nav">
+				      <li class="nav-item">
+				        <a  class="nav-link" href="#/" ng-click="isCollapsed = !isCollapsed"><span class="fa fa-home"></span> Inicio <span class="sr-only">(current)</span></a>
+				      </li>
+				      <li class="nav-item" >
+				        <a class="nav-link" href="#/perfiles" ng-click="isCollapsed = !isCollapsed">
+									<span class="fa fa-users"></span> Perfil</a>
+				      </li>
+				      <li class="nav-item" >
+				        <a class="nav-link" href="#/platos" ng-click="isCollapsed = !isCollapsed">
+				        <span class="fa fa-cutlery"></span> Platos</a>
+				      </li>
+				       <li class="nav-item">
+				        <a class="nav-link" href="#/acerca" ng-click="isCollapsed = !isCollapsed">
+				        <span class="fa fa-cog"></span> Acerca de </a>
+				      </li>
+				    </ul>
+				  </div>
+				  <div>
+					  <a href="#/perfiles" class="btn btn-primary">Registrarse</a>
+					  <a href="#/perfiles" class="btn btn-success">Iniciar Sesion</a>
+				  </div>
+		</div>
+</nav>

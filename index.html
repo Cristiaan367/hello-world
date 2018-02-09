@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html ng-app="veranoApp" ng-controller="mainCtrl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AppComidas</title>
+  <link rel="icon" type="image/png"  href="img/icons/perfil.png" />
+	<!-- Incluir Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<!-- Estilo personalizado -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Incluir AngularJS -->
+  <script src="js/lib/angular.min.js"></script>
+  <script src="js/lib/angular-route.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/inicioCtrl.js"></script>
+  <script src="js/pasantesCtrl.js"></script>
+  <script src="js/fotosCtrl.js"></script>
+  <script src="js/nuevosCtrl.js"></script>
+  <script src="js/acercaCtrl.js"></script>
+
+  <script src="js/perfilCtrl.js"></script>
+  <script src="js/perfilesCtrl.js"></script>
+  <script src="js/platoCtrl.js"></script>
+  <script src="js/platosCtrl.js"></script>
+  <!--firebase-->
+  <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDr9Mo8WFIBY95ymPA8ISr8OMM9cCySxIs",
+      authDomain: "proyectopruebasc.firebaseapp.com",
+      databaseURL: "https://proyectopruebasc.firebaseio.com",
+      projectId: "proyectopruebasc",
+      storageBucket: "proyectopruebasc.appspot.com",
+      messagingSenderId: "87183104723"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <!--Anfularfire
+  <script  src = "https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"> </script>
+  -->
+  <script srd="js/lib/angularfire.js"></script>
+  <link rel="stylesheet" type="text/css" href="js/lib/aos.css">
+  </head>
+
+  <body>
+  		<!--Incluyendo  el menu de angular -->
+  		<div ng-include="menuSuperior"></div>
+      <!--Agregando particulas de particles.js-->
+      <div class="count-particles">
+
+                    <div id="particles-js">
+
+                    </div>
+
+
+
+            </div>
+
+            <div ng-view></div>
+
+            <footer class="footer">
+                <div class="container">
+                <a  class="btn btn-primary c2" href="https://www.facebook.com/groups/132313790280692/"><span class="fa fa-facebook"></span> Grupo</a>
+                <h5 class="titulo c1" style=" padding-top:  5px" > Faltan: <span id="clock"></span></h5>
+
+                  </div>
+            </footer>
+	    <script type="text/javascript" src="js/particles.js"></script>
+      <script type="text/javascript" src="js/particulas1.js"></script>
+      <script src="js/lib/jquery.min.js"></script>
+      <script src="js/lib/jquery.countdown.min.js"></script>
+      <script type="text/javascript" src="js/cont.js"></script>
+      <script type="text/javascript" src="js/lib/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+  </body>
+</html>
